@@ -31,7 +31,6 @@ namespace ekzamen
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sql = "SELECT * FROM [HUMAN]";
             try
             {
                 sql_connection = new SqlConnection(conn_string);
@@ -41,7 +40,7 @@ namespace ekzamen
             {
                 MessageBox.Show("нет подключения", "Сообщение", MessageBoxButtons.OK);
             }
-
+            string sql = "SELECT * FROM [Company]";
 
         }
     }
